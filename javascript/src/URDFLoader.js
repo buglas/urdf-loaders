@@ -602,7 +602,7 @@ class URDFLoader {
 
                         const radius = parseFloat(n.children[0].getAttribute('radius')) || 0;
                         const length = parseFloat(n.children[0].getAttribute('length')) || 0;
-                        primitiveModel.scale.set(radius, length, radius);
+                        primitiveModel.scale.set(1, length, radius);
                         primitiveModel.rotation.set(Math.PI / 2, 0, 0);
 
                         group.add(primitiveModel);
